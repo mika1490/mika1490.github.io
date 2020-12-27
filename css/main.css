@@ -1,0 +1,53 @@
+* {
+  font-family: 'Helvetica', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  text-align: center;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+/* Home Section */
+.header {
+position: absolute;
+top: 40%;
+left: 10%;
+}
+.title {
+font-size: 7rem;
+}
+.sub-title {
+padding: 1rem;
+color: #c5c5c5;
+font-size: 2rem;
+font-weight: 500;
+position: absolute;
+left: 1%;
+}
+/* Section Styles */
+
+section {
+  height: 100vh;
+  width: 100%;
+  
+}
+.project-content {
+margin-top: 100px;
+display: flex;
+padding: 2rem
+}
+.project-text {
+font-size: 2rem;
+margin: 3rem;
+}
+.project-image {
+height: 500px;
+width: 500px;
+margin: 3rem;
+}
+
+/* Media Queries */
