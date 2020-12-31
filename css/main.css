@@ -157,6 +157,12 @@ section {
   margin-top: 6rem;
 }
 
+.text-link {
+  text-decoration: underline;
+  color: #c5c5c5;
+  font-size: 2rem;
+}
+
 /* Media Queries */
 
 /* @media (min-width:320px){} */
