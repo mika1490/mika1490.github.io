@@ -175,10 +175,21 @@ border: none;
     height: 50px;
 
   }
+
+  .project-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
   .project-button {
     display: none;
   }
+
   .project-one {
+    display: none;
+  }
+
+  .project-link {
     display: none;
   }
 }

@@ -91,7 +91,6 @@
   position: absolute;
 }
 
-
 .myIcon-toggle.active .line-3 {
   transform: rotate(-45deg);
 }
