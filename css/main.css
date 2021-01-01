@@ -166,7 +166,7 @@ border: none;
 
 .text-link {
   text-decoration: underline;
-  color: powderblue;
+  color: lightskyblue;
   font-size: 2rem;
 }
 
@@ -197,5 +197,7 @@ border: none;
   }
   .about-text {
     margin-right: 50rem;
+    color: #c5c5c5;
+    font-family: 'Helvetica', Arial, sans-serif;
   }
 }
