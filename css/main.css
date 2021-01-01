@@ -166,7 +166,7 @@ border: none;
 
 .text-link {
   text-decoration: underline;
-  color: #c5c5c5;
+  color: powderblue;
   font-size: 2rem;
 }
 
@@ -194,5 +194,8 @@ border: none;
   }
   .project-text {
     margin-right: 10rem;
+  }
+  .about-text {
+    margin-right: 50rem;
   }
 }
