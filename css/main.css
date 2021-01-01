@@ -5,8 +5,8 @@
   padding: 0;
   color: rgb(0, 0, 0);
   font-size: 10px;
-  /* text-align: center; */
 }
+
 html,
 body {
   height: 100%;
@@ -26,7 +26,7 @@ body {
 }
 
 .project-content {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .project-section {
@@ -76,7 +76,6 @@ section {
   font-size: 2rem;
   font-weight: 300;
 }
-
 .project-text {
   font-size: 2rem;
   margin-top: 6rem;
@@ -87,9 +86,17 @@ section {
 }
 
 .project-button {
- font-size: 20px;
- background-color: #111 !important;
+transition-duration: 0.4s;
+padding: 1em 1.5em;
+font-size: 12px;
+background-color: black;
+color: white;
+border: none;
+}
 
+.project-button:hover {
+  background-color: white;
+  color: black;
 }
 
 .project-image > a > img {
@@ -163,35 +170,15 @@ section {
   font-size: 2rem;
 }
 
-/* Media Queries */
-
-/* @media (min-width:320px){} */
-/* smartphones, iPhone, portrait 480x320 phones */ 
-
-/* @media (min-width:481px){} */
-/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-
-/* @media (min-width:641px){} */
- /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-
-/* @media (min-width:961px){} */
- /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-
-/* @media (min-width:1025px){} */
- /* big landscape tablets, laptops, and desktops */ 
-
-/* @media (min-width:1281px){} */
- /* hi-res laptops and desktops */ 
-
 @media only screen and (max-width: 641px){
   .section-break {
     height: 50px;
 
   }
-  .project-link > button {
+  .project-button {
     display: none;
   }
-  .project-video{
+  .project-one {
     display: none;
   }
 }
@@ -202,7 +189,10 @@ section {
     font-weight: bold;
   }
   .project-title {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
+  }
+  .project-text {
+    margin-right: 10rem;
   }
 }
