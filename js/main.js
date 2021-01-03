@@ -16,8 +16,10 @@ $(document).ready(function() {
         $('.navbar-collapse').toggle();
         $('.myIcon-toggle').toggleClass("active")
         $('.page-content').toggleClass("active")
-        location.replace(navLocation);
-        return false;
+        if (navLocation === 'http://mikadumont.com/#projects'){
+            location.replace(navLocation);
+            return false;
+        }
     });
     // This function will navigate to #projects from the collapsed navbar view
     $(".projects-link").click(function(){
