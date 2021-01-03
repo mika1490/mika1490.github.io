@@ -28,9 +28,10 @@ $(document).ready(function() {
         if ($('.page-content').is(":hidden")){
             $('.page-content').toggleClass("active");
         }
-        location.replace('http://mikadumont.com/#projects');
-        return false;
+        /* location.replace('http://mikadumont.com/#projects');
+        return false; */
     })
+    
     $(".about-link").click(function(){
         // $('.navbar-collapse').toggle();
         // $('.myIcon-toggle').toggleClass("active");
