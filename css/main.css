@@ -25,6 +25,9 @@ body {
   display: none;
 }
 
+#projects {
+  padding-top: 100px;
+}
 .project-content {
   margin-top: 80px;
 }
@@ -173,9 +176,10 @@ border: none;
 @media only screen and (max-width: 641px){
   .section-break {
     height: 50px;
-
   }
-
+  #projects {
+    padding-top: 50px;
+  }
   .project-title {
     font-size: 3rem;
     font-weight: bold;
