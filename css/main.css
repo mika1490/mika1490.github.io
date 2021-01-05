@@ -102,6 +102,10 @@ border: none;
   color: black;
 }
 
+.project-view-height {
+  height: 45px; 
+}
+
 .project-image > a > img {
   width: 100%;
   box-shadow: -15px 15px 24px -15px #111;
