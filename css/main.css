@@ -65,10 +65,16 @@ body {
 /* Section Styles */
 
 section {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
+
+#home
+{
+    height: 100vh;
+  width: 100%; 
+    }
 .project-title {
   font-size: 5rem;
   font-weight: bold;
@@ -170,7 +176,12 @@ border: none;
   font-size: 2rem;
   margin-top: 6rem;
 }
-
+#about
+{
+    height: 150vh;
+  width: 100%; 
+    
+    }
 .text-link {
   text-decoration: underline;
   color: lightskyblue;
@@ -189,13 +200,25 @@ border: none;
     font-weight: bold;
   }
 
+section {
+    height: 80vh;
+    width: 100%;
+}
+#photGallery
+{
+    
+  height: 80vh;
+  width: 100%;  
+ 
+}
+
   .project-button {
     display: none;
   }
 
-  .project-one {
+  /*.project-one {
     display: none;
-  }
+  }*/
 
   .project-link {
     display: none;

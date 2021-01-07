@@ -16,7 +16,7 @@ $(document).ready(function() {
         $('.navbar-collapse').toggle();
         $('.myIcon-toggle').toggleClass("active")
         $('.page-content').toggleClass("active")
-        if (navLocation === 'http://mikadumont.com/#projects'){
+        if (navLocation === 'index.com/#projects'){
             location.replace(navLocation);
             return false;
         }
@@ -38,7 +38,7 @@ $(document).ready(function() {
         // if ($('.page-content').is(":hidden")){
         //     $('.page-content').toggleClass("active");
         // }
-        location.replace('http://mikadumont.com/about.html');
+        location.replace('about.html');
         return false;
     })
     $(".memoji").click(function(){
@@ -50,7 +50,7 @@ $(document).ready(function() {
             $('.page-content').toggleClass("active");
         }
 
-        location.replace('http://mikadumont.com/index.html#home');
+        location.replace('index.html');
         return false;
     })
     // $(".memoji-about").click(function(){
