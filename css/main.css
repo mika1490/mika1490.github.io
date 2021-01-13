@@ -5,6 +5,7 @@
   padding: 0;
   color: rgb(0, 0, 0);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +65,6 @@ body {
   font-size: 22px;
   font-weight: 500;
   margin-right: 30%;
-  /* position: absolute; */
   text-align: left;
 }
 /* Section Styles */
@@ -113,7 +113,6 @@ color: white;
 border: none;
 margin-left: 40%;
 margin-bottom: 10px;
-/* border: 2px solid black; */
 letter-spacing: 2px;
 }
 
@@ -179,7 +178,6 @@ letter-spacing: 2px;
 .about-title{
   font-size: 4rem;
   font-weight: bold;
-  font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .about-subtitle {
@@ -191,8 +189,6 @@ letter-spacing: 2px;
 .about-text {
   font-size: 2rem;
   margin-top: 6rem;
-  font-family: 'Helvetica', Arial, sans-serif;
-  color: grey;
 }
 #about
 {
@@ -206,11 +202,7 @@ letter-spacing: 2px;
   font-size: 1.5rem;
 }
 .project-title {
-  letter-spacing: -2px;/*
-  font-style: normal;
-  font-size: 40px;
-  text-align: left;
-  font-weight: 900 ; */
+  letter-spacing: -2px;
   font-size: 40px;
     font-weight: bold;
     text-align: left;
@@ -296,9 +288,7 @@ font-size: 45px;
   }
   #home{
     margin-bottom: -240px;
-    /* height: 100vh; */
     width: 100%;
-
   }
   
   .page-content h1 {
@@ -334,11 +324,13 @@ font-size: 45px;
   .title-about{
     color: rgb(0, 0, 0);
     line-height: 5.333333333333333rem;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: arial black;
     letter-spacing: -2px;
     font-style: normal;
     font-size: 70px;
-    font-weight: 900 ;
+    font-weight: 600 ;
+font-family: 'Helvetica', Arial, sans-serif !important;
+
   }
   .project-text {
     margin-right: 10rem;
@@ -356,7 +348,7 @@ font-size: 45px;
     margin-right: 50%;
     line-height: 35px;
     font-size: 18px;
-    color: grey;
+    color: #242424;
     text-align: left;
     font-family: 'Helvetica', Arial, sans-serif;
   }
