@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   color: rgb(0, 0, 0);
-  font-size: 10px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   height: 100%;
@@ -20,7 +21,10 @@ body {
 .page-content {
   display: visible;
 }
-
+.page-content h1 {
+  font-size: 3rem;
+    font-weight: 500;
+}
 .page-content.active {
   display: none;
 }
@@ -28,11 +32,14 @@ body {
 #projects {
   padding-top: 100px;
 }
-.project-content {
-  margin-top: 80px;
+.project-section {
+  margin-top: 150px;
+  height: auto;
+  padding-bottom: 300px;
 }
 
 .project-section {
+  
   opacity: 0;
   transform: translate(0, 20px); transition: all 1.5s;
 }
@@ -49,18 +56,16 @@ body {
 .header {
   position: absolute;
   top: 40%;
-  left: 9%;
+  left: 0%;
 }
 
-.title {
-  font-size: 5rem;
-  font-weight: bold;
-}
 .sub-title {
   color: #c5c5c5;
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: 500;
-  position: absolute;
+  margin-right: 30%;
+  /* position: absolute; */
+  text-align: left;
 }
 /* Section Styles */
 
@@ -69,42 +74,52 @@ section {
     width: 100%;
 }
 
-
+.project-section{
+  margin-top: 1px;
+}
 #home
 {
     height: 100vh;
-  width: 100%; 
-    }
-.project-title {
-  font-size: 5rem;
-  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  
+    
 }
 
 .project-subtitle {
   color: #c5c5c5;
-  font-size: 2rem;
+  font-size: 15px;
   font-weight: 300;
 }
 .project-text {
-  font-size: 2rem;
-  margin-top: 6rem;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .project-link {
-  margin-top: 6rem;
+  margin-top: 5px;
+  float: right;
 }
 
 .project-button {
 transition-duration: 0.4s;
-padding: 1em 1.5em;
+padding: 10px 25px;
+display: none;
 font-size: 12px;
+font-weight: 900;
+border-radius: 5.555555555555555rem;
 background-color: black;
 color: white;
 border: none;
+margin-left: 40%;
+margin-bottom: 10px;
+/* border: 2px solid black; */
+letter-spacing: 2px;
 }
 
 .project-button:hover {
   background-color: white;
+ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);;
   color: black;
 }
 
@@ -143,8 +158,8 @@ border: none;
 .about-header {
   position: absolute;
   top: 20%;
-  left: 9%;
-  right: 9%;
+  left: 5%;
+  right: 2%;
 }
 
 .about {
@@ -164,6 +179,7 @@ border: none;
 .about-title{
   font-size: 4rem;
   font-weight: bold;
+  font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .about-subtitle {
@@ -175,71 +191,173 @@ border: none;
 .about-text {
   font-size: 2rem;
   margin-top: 6rem;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: grey;
 }
 #about
 {
-    height: 150vh;
+    height: 100vh;
   width: 100%; 
     
     }
 .text-link {
   text-decoration: underline;
   color: lightskyblue;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.project-title {
+  letter-spacing: -2px;/*
+  font-style: normal;
+  font-size: 40px;
+  text-align: left;
+  font-weight: 900 ; */
+  font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+.project-subtitle{
+  text-align: left;
+}
+.project-text{
+  text-align: left;
+  margin-right: 50px;
+  padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 641px){
-  .section-break {
-    height: 50px;
+
+.title-about{
+  font-size: 70px;
+}
+.project-button{
+  margin: 0;
+}
+.about-text {
+  color: #242424;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+ @media only screen and (max-width: 650px){
+ 
+.page-content h1 {
+  font-size: 3rem;
+    font-weight: 500; 
+  
+} 
+.project-section {
+  height: auto;
+  padding-bottom: 300px;
+}
+.sub-title {
+  color: #c5c5c5;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10PX;
+  text-align: left;
+}
+#home {
+  height: 150vh !important;
+  width: 100%;
+  text-align: left;
+}
+.header{
+  top:27%;
+}
+
+.project-link{
+margin: 0;
+float: left;
+margin-right: 50%;
+}
+.project-title{
+  font-size: 20px;
+}
+.project-text{
+  font-size: 12px;
+  margin-right: 0;
+}
+.title-about{
+font-size: 45px;
+}
+.about-text{
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+} 
+
+@media only screen and (min-width:1025px){
+  html {
+    scroll-behavior: smooth;
   }
-  #projects {
-    padding-top: 50px;
+  #project_Page{
+    display: block;
+  }
+  #home{
+    margin-bottom: -240px;
+    /* height: 100vh; */
+    width: 100%;
+
+  }
+  
+  .page-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-right: 0;
+    
+  }
+  .project-subtitle{
+    text-align: left;
+    font-size: 22px;
+  }
+  .sub-title {
+    color: #c5c5c5;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    text-align: l;
   }
   .project-title {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 500; 
+    text-align: left;
   }
-
-section {
-    height: 80vh;
-    width: 100%;
-}
-#photGallery
-{
-    
-  height: 80vh;
-  width: 100%;  
- 
+.project-section{
+  margin-top: 140px;
+  height: auto;
+  padding-bottom: 200px;
+  
+  
 }
 
-  .project-button {
-    display: none;
-  }
-
-  /*.project-one {
-    display: none;
-  }*/
-
-  .project-link {
-    display: none;
-  }
-}
-
-@media (min-width:1025px){
-  .title {
-    font-size: 9rem;
-    font-weight: bold;
-  }
-  .project-title {
-    font-size: 5rem;
-    font-weight: bold;
+  .title-about{
+    color: rgb(0, 0, 0);
+    line-height: 5.333333333333333rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+    letter-spacing: -2px;
+    font-style: normal;
+    font-size: 70px;
+    font-weight: 900 ;
   }
   .project-text {
     margin-right: 10rem;
+    font-size: 18px;
+    text-align: left;
+  }
+  .project-button{
+    margin-left: 0;
+    display: block;
+  }
+  .project-link{
+    float: left;
   }
   .about-text {
-    margin-right: 50rem;
-    color: #c5c5c5;
+    margin-right: 50%;
+    line-height: 35px;
+    font-size: 18px;
+    color: grey;
+    text-align: left;
     font-family: 'Helvetica', Arial, sans-serif;
   }
 }
